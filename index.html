@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Simple Navbar Menu</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--Import Stylesheets-->
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+        
+        <!--style-->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <!-- Menu -->
+        <header id="header" class="fixed-top">
+            <nav class="navbar navbar-expand-md">
+
+                <a class="navbar-brand"><img src="images/logo.png" width="120" /></a>
+
+                <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#collapse_target">
+                    <span class="line line-top"></span>
+                    <span class="line line-delete"></span>
+                    <span class="line line-bottom mb-0"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="collapse_target">
+                    <ul class="navbar-nav ml-auto" id="main-menu">
+                        <li class="nav-item">
+                            <a class="scrollTo menu-item nav-link active" href="#sectionHome">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scrollTo menu-item nav-link" href="#section">Section</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="target_dropdown" href="#">
+                                Dropdown
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="#target_dropdown">
+                                <a class="dropdown-item" href="#">Item 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Item 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Menu end -->
+        <!-- Section home -->
+        <section id="sectionHome" class="scrollspy" style="height: 100vh; background-color: white;"></section>
+
+        <!-- Section -->
+        <section id="section" class="scrollspy" style="height: 100vh; background-color: black;"></section>
+
+
+
+        <!--Import Scripts-->
+        <!--Jquery-->
+        <script src="lib/jquery/jquery.min.js"></script>
+
+        <!--Bootstrap-->
+        <script src="lib/bootstrap/bootstrap.min.js"></script>
+
+        <!--simple scrollspy plugin-->
+        <script src="plugin/simple-scrollspy.min.js" defer></script>
+
+        <!--script-->
+        <script src="script.js" defer></script>        
+    </body>
+
+</html>
